@@ -1,7 +1,7 @@
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
+// import { FaWhatsapp } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 
 const Navbar = () => {
@@ -17,9 +17,9 @@ const Navbar = () => {
         <a href="https://www.instagram.com/calvintjj">
           <FaInstagram />
         </a>
-        <a href="https://wa.me/+6281265571198">
+        {/* <a href="https://wa.me/+6281265571198">
           <FaWhatsapp />
-        </a>
+        </a> */}
         <a href="mailto:calvinhendra330@gmail.com">
           <FaEnvelope />
         </a>

@@ -2,21 +2,59 @@ import project1 from "../projects/project-1.png";
 import project2 from "../projects/project-2.jpg";
 import project3 from "../projects/project-3.jpg";
 import project4 from "../projects/project-4.jpg";
-import projectBati from "../projects/project-bati.png"
+import projectBati from "../projects/project-bati.png";
 
-export const HERO_CONTENT = `I am a highly motivated computer science student at Binus University with a strong foundation in software engineering principles. I have hands-on experience in both front-end and back-end development, using modern technologies such as Next.js, TypeScript, React, Node.js, Express.js, and PostgreSQL. Additionally, I have completed projects using languages and frameworks like C, C++, Java, HTML, CSS, JavaScript, MySQL, and Laravel. My goal is to leverage my skills to build scalable and efficient web applications that deliver innovative solutions and exceptional user experiences.`;
-
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient, user-friendly web applications. Currently, I specialize in Next.js, TypeScript, React, Node.js, Express.js, and PostgreSQL to develop modern web solutions. I have also gained proficiency in other technologies including C, C++, Java, HTML, CSS, JavaScript, MySQL, and Laravel from past projects. My journey in web development started with a deep curiosity about how things work, and it has evolved into a career where I continuously learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I stay active, explore new technologies, and contribute to open-source projects.`;
-
+export const NAME = "Calvin Hendra";
+export const POSITION = "Software Engineer";
+export const HERO_CONTENT = `Final-year Computer Science student and Software Engineer Intern with hands-on experience delivering end-to-end applications in a fintech and AI-driven environment. Experienced in backend systems, API development, database design, AI-powered integration, and frontend development for building complete, production-ready applications. Comfortable working on complex problem-solving tasks, debugging system-level issues, and collaborating in team-based development to deliver reliable solutions.`;
 
 export const EXPERIENCES = [
   {
-    year: "February 2024 - Present",
-    role: "Full-Stack Developer Intern",
+    year: "February 2026 - Present",
+    role: "Software Engineer",
     company: "PT Bati Investasi Teknologi",
-    description: `Responsible for developing a full-stack web-based solution for Bati AI Wealth Management while collaborating with the trading team to build robust data pipelines for trading analysis and modeling.`,
-    technologies: ["TypeScript", "React.js", "Next.js", "TailwindCSS", "Node.js", "Express.js", "PostgreSQL"],
-  },  
+    description: `
+Led the development and maintenance of a widget-based AI sales agent embedded into client websites to support user acquisition and conversion.
+
+Owned full-stack feature development, including LLM-based workflows using Retrieval-Augmented Generation (RAG), along with system observability through tracing and monitoring.
+
+Collaborated closely with product and business teams to align AI behavior with financial domain constraints and sales objectives.
+    `,
+    technologies: [
+      "TypeScript",
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Python",
+      "FastAPI",
+      "LangChain",
+      "RAG",
+      "PostgreSQL",
+      "Vector Databases",
+    ],
+  },
+  {
+    year: "February 2025 - February 2026",
+    role: "Software Engineer Intern",
+    company: "PT Bati Investasi Teknologi",
+    description: `
+  Contributed to the development of Bati’s AI Wealth Management platform and the early-stage AI sales agent as part of the engineering team.
+  Worked on full-stack web features, backend APIs, and initial RAG pipelines supporting both internal wealth tools and client-facing experiences.
+  Collaborated with the trading team to support data workflows and internal tools used for financial analysis and modeling.
+    `,
+    technologies: [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+    ],
+  },
+];
+
+export const CERTIFICATIONS = [
   {
     year: "May 2024",
     role: "Certified Backend Developer with Node.js",
@@ -24,6 +62,9 @@ export const EXPERIENCES = [
     description: `Earned certification in backend development by completing an intensive program focused on Mastering Backend Development with Node.js. Demonstrated expertise in server-side development, RESTful API design, database integration using Sequelize ORM, and middleware implementation through a rigorous assessment process.`,
     technologies: ["Node.js", "Express.js", "Sequelize", "MySQL", "REST API"],
   },
+];
+
+export const ORGANIZATIONS = [
   {
     year: "Nov 2023 – July 2024",
     role: "Member",
@@ -57,17 +98,25 @@ export const PROJECTS = [
   {
     title: {
       text: "Bati WealthAI",
-      link: "https://wealthplatform.batiinvestasi.ai",
+      // link: "https://wealthplatform.batiinvestasi.ai",
     },
     image: projectBati,
     description:
       "Responsible for the development of Bati WealthAI, an intelligent web based CRM for relationship manager to grow their portfolio with Bati AI integration.",
-      technologies: ["TypeScript", "React.js", "Next.js", "TailwindCSS", "Node.js", "Express.js", "PostgreSQL"],
+    technologies: [
+      "TypeScript",
+      "React.js",
+      "Next.js",
+      "TailwindCSS",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+    ],
   },
   {
     title: {
       text: "MulaiDulu",
-      link: "https://mulaidulu.site",
+      // link: "https://mulaidulu.site",
     },
     image: project1,
     description:
@@ -77,7 +126,7 @@ export const PROJECTS = [
   {
     title: {
       text: "MakanGak",
-      link: "https://makan-gak-app-fullstack.vercel.app"
+      // link: "https://makan-gak-app-fullstack.vercel.app",
     },
     image: project2,
     description:

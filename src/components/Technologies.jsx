@@ -1,27 +1,17 @@
-import {
-  FaReact,
-  FaNodeJs,
-  FaLaravel,
-  FaBootstrap,
-  FaHtml5,
-  FaCss3Alt,
-  FaJava,
-  FaJsSquare,
-} from "react-icons/fa";
-import { SiTypescript,SiMysql, SiCplusplus, SiDotnet, SiExpress, SiTailwindcss } from "react-icons/si";
-import { BiLogoPostgresql } from "react-icons/bi";
+import { SiMysql, SiExpress, SiTailwindcss, SiFastapi } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { motion } from "framer-motion";
 
+// Keyframes approximating a cosine wave: smooth rise and fall
 const iconVariants = (duration) => ({
-  initial: { y: -10 },
+  initial: { y: 0 },
   animate: {
-    y: [10, -10],
+    y: [0, 7, 10, 7, 0, -7, -10, -7, 0],
     transition: {
       duration: duration,
       ease: "linear",
       repeat: Infinity,
-      repeatType: "reverse",
+      repeatType: "loop",
     },
   },
 });
@@ -43,19 +33,59 @@ const Technologies = () => {
         transition={{ duration: 1.5 }}
         className="flex flex-wrap items-center justify-center gap-4"
       >
-        {/* TypeScript */}
+        {/* JavaScript */}
         <motion.div
-          variants={iconVariants(3)}
+          variants={iconVariants(2)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiTypescript className="text-7xl text-blue-400" />
+          <img
+            src="/js.svg"
+            alt="JavaScript"
+            className="w-16 h-16 object-contain"
+          />
+        </motion.div>
+        {/* TypeScript */}
+        <motion.div
+          variants={iconVariants(2.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <img
+            src="/ts.svg"
+            alt="JavaScript"
+            className="w-16 h-16 object-contain"
+          />{" "}
+        </motion.div>
+
+        {/* Python */}
+        <motion.div
+          variants={iconVariants(3)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4 flex items-center justify-center"
+        >
+          <img
+            src="/python.svg"
+            alt="Python"
+            className="w-16 h-16 object-contain"
+          />
+        </motion.div>
+        {/* FastAPI */}
+        <motion.div
+          variants={iconVariants(3.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiFastapi className="text-7xl text-yellow-400" />
         </motion.div>
 
         {/* Next.js */}
         <motion.div
-          variants={iconVariants(2)}
+          variants={iconVariants(4)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
@@ -65,17 +95,21 @@ const Technologies = () => {
 
         {/* ReactJs */}
         <motion.div
-          variants={iconVariants(3)}
+          variants={iconVariants(3.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <FaReact className="text-7xl text-cyan-400" />
+          <img
+            src="/react.svg"
+            alt="ReactJs"
+            className="w-16 h-16 object-contain"
+          />{" "}
         </motion.div>
 
         {/* TailwindCSS */}
         <motion.div
-          variants={iconVariants(4)}
+          variants={iconVariants(3)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
@@ -85,17 +119,21 @@ const Technologies = () => {
 
         {/* NodeJs */}
         <motion.div
-          variants={iconVariants(2)}
+          variants={iconVariants(2.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <FaNodeJs className="text-7xl text-green-500" />
+          <img
+            src="/nodejs.svg"
+            alt="NodeJs"
+            className="w-16 h-16 object-contain"
+          />
         </motion.div>
 
         {/* Express.js */}
         <motion.div
-          variants={iconVariants(4)}
+          variants={iconVariants(2)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
@@ -105,72 +143,16 @@ const Technologies = () => {
 
         {/* PostgreSQL */}
         <motion.div
-          variants={iconVariants(3)}
+          variants={iconVariants(2.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <BiLogoPostgresql className="text-7xl text-blue-600" />
-        </motion.div>
-
-        {/* C++ */}
-        <motion.div
-          variants={iconVariants(2)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <SiCplusplus className="text-7xl text-blue-400" />
-        </motion.div>
-
-        {/* Java */}
-        <motion.div
-          variants={iconVariants(3)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <FaJava className="text-7xl text-red-700" />
-        </motion.div>
-
-        {/* JavaScript */}
-        <motion.div
-          variants={iconVariants(4)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <FaJsSquare className="text-7xl text-yellow-400" />
-        </motion.div>
-
-        {/* Laravel */}
-        <motion.div
-          variants={iconVariants(2)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <FaLaravel className="text-7xl text-red-500" />
-        </motion.div>
-
-        {/* Bootstrap */}
-        <motion.div
-          variants={iconVariants(3)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <FaBootstrap className="text-7xl text-purple-500" />
-        </motion.div>
-
-        {/* ASP.NET */}
-        <motion.div
-          variants={iconVariants(2)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <SiDotnet className="text-7xl text-purple-600" />
+          <img
+            src="/postgresql.svg"
+            alt="PostgreSQL"
+            className="w-16 h-16 object-contain"
+          />
         </motion.div>
 
         {/* MySQL */}
@@ -181,6 +163,30 @@ const Technologies = () => {
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
           <SiMysql className="text-7xl text-blue-600" />
+        </motion.div>
+
+        {/* Docker */}
+        <motion.div
+          variants={iconVariants(3.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <img
+            src="/docker.svg"
+            alt="Docker"
+            className="w-16 h-16 object-contain"
+          />
+        </motion.div>
+
+        {/* AWS */}
+        <motion.div
+          variants={iconVariants(4)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <img src="/aws.svg" alt="AWS" className="w-16 h-16 object-contain" />
         </motion.div>
       </motion.div>
     </div>
